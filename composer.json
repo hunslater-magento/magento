@@ -1,0 +1,13 @@
+{
+    "name": "webgriffe/magento",
+    "license": "OSL",
+    "authors": [
+        {
+            "name": "Webgriffe",
+            "email": "info@webgriffe.com"
+        }
+    ],
+    "require": {
+	"webgriffe/magento-installer": "dev-master"
+    }
+}
