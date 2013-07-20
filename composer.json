@@ -8,6 +8,17 @@
         }
     ],
     "require": {
-	"webgriffe/magento-installer": "dev-master"
+	    "webgriffe/magento-installer": "dev-master",
+        "incenteev/composer-parameter-handler": "@stable"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ]
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": "var/install.yml"
+        }
     }
 }

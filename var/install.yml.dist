@@ -1,0 +1,14 @@
+parameters:
+    locale: en_US
+    timezone: America/Los_Angeles
+    default_currency: USD
+    db_host: localhost
+    db_name: magento
+    db_user: root
+    db_pass: password
+    url: http://magento.local/
+    admin_firstname: John
+    admin_lastname: Doe
+    admin_email: john.doe@foo.it
+    admin_username: admin
+    admin_password: password
