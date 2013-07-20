@@ -13,12 +13,14 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Webgriffe\\MagentoInstaller\\ScriptHandler::installMagento"
         ]
     },
     "extra": {
         "incenteev-parameters": {
             "file": "var/install.yml"
-        }
+        },
+        "install": "var/install.yml"
     }
 }
