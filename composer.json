@@ -10,9 +10,16 @@
     "require": {
 	    "webgriffe/magento-installer": "dev-master",
         "incenteev/composer-parameter-handler": "@stable",
-        "magento-hackathon/magento-composer-installer": "*",
-        "magento-hackathon/composer-command-integrator": "*"
+        "magento-hackathon/magento-composer-installer": "@stable",
+        "magento-hackathon/composer-command-integrator": "dev-master",
+        "composer/composer": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
     "scripts": {
         "post-create-project-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -23,6 +30,7 @@
         "incenteev-parameters": {
             "file": "var/install.yml"
         },
-        "install": "var/install.yml"
+        "install": "var/install.yml",
+        "magento-root-dir": "/"
     }
 }
