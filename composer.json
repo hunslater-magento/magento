@@ -9,7 +9,9 @@
     ],
     "require": {
 	    "webgriffe/magento-installer": "dev-master",
-        "incenteev/composer-parameter-handler": "@stable"
+        "incenteev/composer-parameter-handler": "@stable",
+        "magento-hackathon/magento-composer-installer": "*",
+        "magento-hackathon/composer-command-integrator": "*"
     },
     "scripts": {
         "post-create-project-cmd": [
