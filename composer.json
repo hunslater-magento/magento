@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-	    "webgriffe/magento-installer": "dev-master",
+        "webgriffe/magento-installer": "dev-master",
         "incenteev/composer-parameter-handler": "@stable",
         "magento-hackathon/magento-composer-installer": "@stable",
         "magento-hackathon/composer-command-integrator": "dev-master",
@@ -31,6 +31,6 @@
             "file": "var/install.yml"
         },
         "install": "var/install.yml",
-        "magento-root-dir": "/"
+        "magento-root-dir": "."
     }
 }
