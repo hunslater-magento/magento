@@ -26,6 +26,9 @@
             "Webgriffe\\MagentoInstaller\\ScriptHandler::installMagento"
         ]
     },
+    "config": {
+        "vendor-dir": "var/vendor"
+    },
     "extra": {
         "incenteev-parameters": {
             "file": "var/install.yml"
