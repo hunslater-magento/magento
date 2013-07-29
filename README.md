@@ -12,7 +12,10 @@ Supposing that you've Composer installed, to install Magento you can do:
 	
 To know wich versions of Magento are available check available branches.
 
-This package comes with a [Magento Installer Composer's script](https://github.com/webgriffe/magento-installer) so you'll be required to insert the following installation parameters:
+Magento project installer for Composer
+--------------------------------------
+
+This package comes with a [Magento Installer Composer's script](https://github.com/webgriffe/magento-installer) that installs Magento on the given database. You'll be required to insert the following installation parameters:
 
 * `locale`: e.g. _en_US_
 * `timezone`: e.g. _America/Los_Angeles_
@@ -28,6 +31,11 @@ This package comes with a [Magento Installer Composer's script](https://github.c
 * `admin_username`: e.g _admin_
 * `admin_password`: e.g. _password123_, **note that Magento requires that admin password contains letters and numbers**
 
-That's all.
+These parameters will be stored in `var/install.yml` and the installer will use them to install Magento. If something goes wrong during the installation you can relaunch it through the command `composer run-script post-install-cmd`.
+
+Magento module installer for Composer
+-------------------------------------
+
+This package comes with the [Magento module installer for Composer by Magento Hackathon](https://github.com/magento-hackathon/magento-composer-installer). If you want to install an extension you have only to add it to your Composer's dependencies and then execute the command `composer update vendor/my-brand-new-extension`. See the relative documentation for further informations.
 
 For any suggestions or bug report, please use GitHub's issues section. Thank you!
