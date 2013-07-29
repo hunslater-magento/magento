@@ -21,7 +21,11 @@
         }
     ],
     "scripts": {
-        "post-create-project-cmd": [
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Webgriffe\\MagentoInstaller\\ScriptHandler::installMagento"
+        ],
+        "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Webgriffe\\MagentoInstaller\\ScriptHandler::installMagento"
         ]
